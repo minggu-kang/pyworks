@@ -87,3 +87,38 @@ a = (1,2,3)
 a = a+(4,)
 print(a)
 
+print("="*50)
+
+#Q9
+a = dict()
+
+a['name']='pthon'
+a[('a')]='pthon'
+# a[[1]]='pthon'
+a[250]='pthon'
+
+print("="*50)
+
+# Q10
+
+a = {'A':90,'B':80,'C':70}
+result = a.pop('B')
+print(a)
+print(result)
+
+print("="*50)
+
+# Q11
+
+a = [1,1,1,2,2,3,3,3,4,4,5]
+aSet = set(a)
+b = list(aSet)
+print(b)
+
+print("="*50)
+
+# Q12
+
+a = b = [1,2,3]
+a[1] = 4
+print(b)
