@@ -12,3 +12,4 @@ for x in range(1500): # 거북이 행동수
     angle = r.randint(1, 360) # 거북이 머리 방향
     t.setheading(angle)
     t.forward(20) 
+t.mainloop()

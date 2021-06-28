@@ -34,3 +34,5 @@ t.circle(50)
 t.right(180)
 
 t.circle(50)
+
+t.mainloop()

@@ -10,7 +10,7 @@ class ScaleConverter:
         return self.factor * val
 
 
-
-c1 = ScaleConverter("inches","mm",25)
-print("Converting 2 inches")
-print(str(c1.convert(2)) +c1.units_to)
+if __name__ == "__main__":
+    c1 = ScaleConverter("inches","mm",25)
+    print("Converting 2 inches")
+    print(str(c1.convert(2)) +c1.units_to)

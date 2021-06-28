@@ -15,3 +15,4 @@ for x in range(n):
     t.circle(200)
     t.right(360/n)
 
+t.mainloop()
