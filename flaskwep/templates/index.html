@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>MyHome</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/style.css')}}">
+    <script src="{{url_for('static',filename='JS/watch.js')}}"></script>
+</head>
+<body>
+    <h1>Welcome to my Website</h1>
+    <h2>촬영본</h2>
+    <img src="{{url_for('static',filename='images/20200606.jpg')}}" width="600" height="600">
+    <img src="{{url_for('static',filename='images/20200606_2.jpg')}}" width="600" height="600">
+    <img src="{{url_for('static',filename='images/20200603.jpg')}}" width="600" height="600">
+    <p id="demo"></p>
+</body>
+</html>
