@@ -34,6 +34,28 @@ print("".join(["you","need","python"]))
 #Q5
 f1 = open("test.txt",'w')
 f1.write("Life is to short")
+f1.write("\n")
 f1.close()
 f2 = open("test.txt",'r')
 print(f2.read())
+
+#Q6
+
+user_input = input("저장할 내용을 입력 하세요:")
+f = open('test.txt','a')
+f.write(user_input)
+f.write("\n")
+f.close()
+
+
+#Q7
+
+f = open('test.txt','r')
+body = f.read()
+f.close()
+
+body = body.replace('java','python')
+
+f = open('test.txt','w')
+f.write(body)
+f.close()

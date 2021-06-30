@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ch08/fileIO/data.txt" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/ch08/fileIO/input.txt" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/ch08/score/scorelist.txt" charset="x-windows-949" />
   </component>
 </project>
