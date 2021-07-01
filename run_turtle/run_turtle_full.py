@@ -1,19 +1,19 @@
 import turtle as t
 import random as r
 
-def turn_right():  #오른쪽 화살키
+def turn_right():  #오른쪽 방향키
     t.setheading(0)
 
 
-def turn_up():      #위쪽 화살키
+def turn_up():      #위쪽 방향키
     t.setheading(90)
 
 
-def turn_left():    #왼쪽 화살키
+def turn_left():    #왼쪽 방향키
     t.setheading(180)
 
 
-def turn_down():    #아래쪽 화살키
+def turn_down():    #아래쪽 방향키
     t.setheading(270)
 
 def start():
