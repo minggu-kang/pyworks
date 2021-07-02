@@ -6,8 +6,8 @@ def update_data():
     conn = getconn()
     cur = conn.cursor()
 
-    sql = "update member set age='19' where name = '철수'"
-        # update 테이블이름 set value ='' where value = '' 
+    sql = "update member set name='훈이' where mem_num = '104'"
+        # update 테이블이름 set 필드이름 ='' where 필드이름 = ''
     cur.execute(sql)
 
     conn.commit()

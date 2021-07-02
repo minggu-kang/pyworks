@@ -6,10 +6,10 @@ def select_one():
     cur = conn.cursor()
 
     # 1명 검색 sql
-    sql = "select * from member where name = '훈이'"
+    sql = "select * from member where mem_num= '102'"
     cur.execute(sql)
 
-    print("이름으로 검색")
+    print("회원번호로 검색")
     #rs = cur.fetchmany(num)
     rs = cur.fetchone()
     '''

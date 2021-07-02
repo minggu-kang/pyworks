@@ -19,9 +19,10 @@ html_str = """
 </html>   
     
 """
-
-soup = BeautifulSoup(html_str, 'html.parser')
-#print(soup)
-ul = soup.find('ul')  # find() 맨 처음 나오는 태그만 검색
+contents = BeautifulSoup(html_str, 'html.parser')
+ul = contents.find('ul', {'class':'lang'})          #.find('',{'class':'클래스이름'}) 딕셔너리형태
 #print(ul)
-print(ul.text)        # 텍스트만 검색
+#li = ul.find('li')
+#print(li)  #맨위 리스트만 검색
+lis = ul.find_all('li')
+print(lis[2].text)

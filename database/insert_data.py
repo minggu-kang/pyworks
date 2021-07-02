@@ -7,9 +7,11 @@ def insert_data():
     cur = conn.cursor()
 
     # 자료 추가 - sql
-
-    cur.execute("insert into member values ('철수', 20)")
-    cur.execute("insert into member values ('짱구', 20)")
+    sql = "insert into member(mem_num,name,age) values(105,'유리',25)"
+    # insert into 테이블이름(필드이름,필드이름,필드이름) values(데이터값,데이터값)
+    cur.execute(sql)
+    #cur.execute("insert into member values (103,'철수', 25)")
+    #cur.execute("insert into member values (104,'짱구', 25)")
 
 
     conn.commit()
