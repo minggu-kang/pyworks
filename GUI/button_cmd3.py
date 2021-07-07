@@ -2,8 +2,8 @@ from tkinter import *
 
 def click():
     en_text = entry.get()
-    text.insert(END,en_text + "님환영합니다")
-
+    text.insert(END,en_text + "님환영합니다") # END = 최종 입력지점
+    text.delete(0.0, END)
 
 root = Tk()
 root.title("Hello~")        #루트
