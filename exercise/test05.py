@@ -1,3 +1,4 @@
+
 '''
 # Q1 ~Q2
 
@@ -74,15 +75,48 @@ print(list(map(lambda x: x*3,[1,2,3,4])))
 
 
 # Q7
-# 콘솔
-a = [-8, 2, 7, 5, -3, 5, 0, 1]
-max(a)
-min(a)
+# 함수사용(max값)
+def find_max(li):
+    max = li[0]     # -8
+    for i in li:
+        if max < i:
+            max = i
+    return max
+    '''
+    n = len(li)
+    for i in range(1,n):
+        if max < li[i]:
+            max = li[i]
+            
+    return max
+    '''
 
-max(a) + min(a)
+a = [-8, 2, 7, 5, -3, 5, 0, 1]
+max2 = find_max(a)
+print(max2)
+
+# Q7 최댓값 + 최솟값
+'''
+max = max(a)
+min = min(a)
+
+#max(a) + min(a)
+print(max + min)
+'''
 
 # Q8
 # 콘솔
 
 b = round(17/3,4)
+print(b)
 
+
+# Q12
+import time
+import datetime
+
+now1 = time.strftime("%Y/%m/%d %H:%M:%S")
+print(now1)
+
+now2 = datetime.datetime.now()
+print(now2.strftime("%Y/%m/%d %H:%M:%S"))

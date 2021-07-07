@@ -22,7 +22,7 @@ html_str = """
 contents = BeautifulSoup(html_str, 'html.parser')
 ul = contents.find('ul', {'class':'lang'})          #.find('',{'class':'클래스이름'}) 딕셔너리형태
 #print(ul)
-#li = ul.find('li')
+#li = ul.findall('li')
 #print(li)  #맨위 리스트만 검색
 lis = ul.find_all('li')
-print(lis[2].text)
+print(lis[1].text)
